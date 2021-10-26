@@ -7,27 +7,43 @@ public class ControlFlowExercises {
 //
 //        5 6 7 8 9 10 11 12 13 14 15
 
-
-        int i = 5;
-        while (i <= 15) {
-            System.out.print(""+i+" ");
-        i++;
-        }
+//
+//        int i = 5;
+//        while (i <= 15) {
+//            System.out.print(""+i+" ");
+//        i++;
+//        }
         //        Do While
 //
 //        Create a do-while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
+//
+//        int deuces = 0;
+//        do {
+//            System.out.println(deuces);
+//            deuces+=2;
+//        } while (deuces <= 100);
+
+//
 //        Alter your loop to count backwards by 5's from 100 to -10.
+//        int iGotFiveOnIt = 100;
+//
+//        do {
+//            System.out.println(iGotFiveOnIt);
+//
+//            iGotFiveOnIt -= 5;
+//
+//        } while (iGotFiveOnIt <= 100);
 
-        do {
-            System.out.println("You will see this despite the condition!");
-        } while (false);
 
-
-
-
-    }
-}
-
+//        long squareInt = 2;
+//        do {
+//            System.out.println(squareInt);
+//
+//            squareInt *= squareInt;
+//
+//        } while (squareInt < 1000000);
+//
+//    }
 
 
 //        Create a do-while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
@@ -38,7 +54,8 @@ public class ControlFlowExercises {
 //        256
 //        65536
 //        For
-//
+
+
 //        Refactor the previous two exercises to use a for loop instead.
 //        Fizzbuzz
 //
@@ -49,7 +66,42 @@ public class ControlFlowExercises {
 //        For the multiples of five: print “Buzz”.
 //        For numbers which are multiples of both three and five: print “FizzBuzz”.
 //        Display a table of powers.
+        for (int i = 1; i <= 100; i++) {
+
+//            boolean divisibleBy3 = (i % 3 == 0);
+
+//            boolean divisibleBy5 = (i % 5 == 0);
+
+
+
+
+            if (i % 3 == 0) {
+                 System.out.println("Fizz");
+            }  else if  (i % 5 == 0) {
+                System.out.println("BuzzKill");
+            }else{
+
+            }
+
+            System.out.println(i);
+
+        }
+    }
+}
+
+
+
+//        if (numAnsStr.equals("")) {
+//            // Not divisible by 3 or 5, add the number
+//            numAnsStr += Integer.toString(num);
+//        }
 //
+//
+//    }
+//
+//        return ans;
+//}
+
 //        Prompt the user to enter an integer.
 //        Display a table of squares and cubes from 1 to the value entered.
 //        Ask if the user wants to continue.
