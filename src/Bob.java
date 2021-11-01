@@ -21,7 +21,7 @@ public class Bob {
 
         }
 
-        else if (userInput.endsWith(" ")) {
+        else if (userInput.equals(" ")) {
             System.out.println("Fine. Be that way!");
 
         }
