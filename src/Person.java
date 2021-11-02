@@ -1,23 +1,30 @@
 public class Person {
 
-private String name;
+public String name;
+//Default constructor
+ public Person(String name, int age){
+      this.name = name;
+      this.age = age;
+ }
+//protected a keyword which means it can  share information between the subclasses.
+protected int age;
 
 
 
 
 static public void main (String [] args){
 
-        Person p1 = new Person();
+//        Person p1 = new Person;
 
-        p1.name="Billy Ray";
+//        p1.name="Billy Ray";
 
-        System.out.println(p1.getName());
+//        System.out.println(p1.getName());
 
-        p1.sayHello();
+//        p1.sayHello();
 
-        p1.setName("Ray Billy");
+//        p1.setName("Ray Billy");
 
-        System.out.println(p1.name);
+//        System.out.println(p1.name);
 //
 //    Person person1 = new Person("John");
 //    Person person2 = new Person("John");
