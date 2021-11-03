@@ -2,54 +2,44 @@ package util;
 
 import java.util.Scanner;
 
-//public class Input {
-//
-//
-//
-//    private Scanner scanner = new Scanner(System.in);
-//
-//    String getString(){
-//
+public class Input {
 
-//    }
-//
-//    boolean yesNo() {
-//
-//        boolean yes;
-//        boolean y;
-//
-//
-//        String userContinue = "Do you wish to continue?";
-//
-//        System.out.println(userContinue);
-//
-//        yes = scanner.next().equalsIgnoreCase("y");
-//    }
+    private Scanner scanner;
+
+    public Input() {
+        scanner = new Scanner(System.in);
+
+    }
+
+    String getString() {
+
+        return scanner.nextLine();
+    }
 
 
+    boolean yesNo() {
 
+        String userInput = scanner.next();
+        return userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes");
 
+    }
 
+    int getInt() {
 
+        return this.scanner.nextInt();
+    }
 
-
-
+//    int getInt(int min, int max){
 //
-//    }
-//
-//    int getInt(int 1, int 22){
-//
-//    }
-//
-//    int getInt(){
+//        System.out.println("Enter a number ");
 //    }
 //
 //    double getDouble(double min, double max){
 //
 //    }
-//
-//    double getDouble(){
-//
-//    }
+
+}
+
+
 
 
