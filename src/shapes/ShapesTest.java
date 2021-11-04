@@ -6,7 +6,9 @@ public class ShapesTest {
 
         Rectangle box1 = new Rectangle(4.0,5.0);
 
-        Square box2 = new Square(5.0);
+
+//        Remember that Square is abstract and cannot be instantiated
+//        Square box2 = new Square(5.0);
 
         System.out.println("box2.width = " + box2.width);
         System.out.println("box2.length = " + box2.length);
