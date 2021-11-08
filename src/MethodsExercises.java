@@ -39,25 +39,87 @@ public class MethodsExercises {
 
         }
 
-        System.out.println("Number is not between 1 and 10."+enterNumber);
+        System.out.println("Number is not between 1 and 10." + enterNumber);
 //    recursion at its finest. Calling the same  method within the
 //    same method.
-        return getInteger(min,max);
+        return getInteger(min, max);
     }
 
 
-//  void meanning we are not expected to return anything
+    //  void meanning we are not expected to return anything
 //    We can just execute some commands
-    public static void factorial(){
+    public static void factorial() {
 
         Scanner sc = new Scanner(System.in);
 
+        int userInput;
 
+        String userContinue;
+
+        long factorial = 1;
+
+        String middle = "1";
+
+        do {
+            userInput = getInteger(1, 10);
+
+            for (int i = 1; i <= userInput; i++) {
+
+                if (i > 1) {
+
+                    middle += "x" + i;
+                }
+
+                factorial *= i;
+
+                System.out.printf("%2d! = %-45s = %d%n", i, middle, factorial);
+
+            }
+
+            System.out.println("Would you like to continue? (y/n)");
+
+            userContinue = sc.nextLine();
+
+        } while (userContinue.equalsIgnoreCase("y"));
 
 
     }
 
-    public static void main (String [] args){
+    public static void shakeDemDiceAndRollEm() {
+
+        Scanner sc = new Scanner(System.in);
+
+        String userContinue;
+
+        System.out.println("How may side would you like this dice to have: ");
+
+        int sides = sc.nextInt();
+
+        System.out.println("Would you like to roll the dice? (y/n)");
+
+        String rollDice = sc.nextLine();
+
+        if (rollDice.equalsIgnoreCase("y")) {
+            do {
+                int diceOne = (int) Math.floor(Math.random() * sides);
+
+                int diceDos = (int) Math.floor(Math.random() * sides);
+
+                System.out.println(diceOne);
+
+                System.out.println(diceDos);
+
+                System.out.println("Would you want to play again? (y/n)");
+
+                userContinue = sc.next();
+
+            } while (userContinue.equalsIgnoreCase("y"));
+        }
+
+    }
+
+
+    public static void main(String[] args) {
 
 //        System.out.println("Addition " + addition(1, 1));
 
@@ -67,9 +129,11 @@ public class MethodsExercises {
 
 //        System.out.println("Multiplication " + multiplication(6, 6));
 
-        System.out.println(getInteger(1,10));
+//        System.out.println(getInteger(1,10));
 
+//        factorial();
 
+        shakeDemDiceAndRollEm();
     }
 
 }

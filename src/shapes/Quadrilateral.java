@@ -3,7 +3,7 @@ package shapes;
 //Using this abstract class is to force the subclasses to define the the
 //abstract methods
 
-abstract class Quadrilateral extends Shape implements Measurable{
+public abstract class Quadrilateral extends Shape implements Measurable{
 
 
 //    protected properties to share with the subclasses
@@ -23,9 +23,7 @@ abstract class Quadrilateral extends Shape implements Measurable{
         this.width = width;
     }
 
-    public Quadrilateral() {
 
-    }
 
 //    methods to get my length and width
 
@@ -35,6 +33,7 @@ abstract class Quadrilateral extends Shape implements Measurable{
     }
 
     public double getWidth() {
+
         return this.width = width;
     }
 

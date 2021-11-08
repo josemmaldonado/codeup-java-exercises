@@ -87,8 +87,11 @@ public class ControlFlowExercises {
 //        }
 
 
-//        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+//      boolean confirm;
 //
+//        do    {
+
 //        System.out.println("Enter a number please ");
 //
 //        int userInput = sc.nextInt();
@@ -100,33 +103,47 @@ public class ControlFlowExercises {
 //        System.out.println("------ | ------- | -----");
 //
 //        for (int i = 1; i <= userInput; i++){
+
 //// Setting a minimum field width using the %NUMd. d for digit.
 ////    acts like padding. if you want to align left use the negative sign.
 //
 //            System.out.printf( "%-6d | %-7d | %-5d\n", i, i*i, i*i*i);
 //        }
 
+//        System.out.println("Do you wish to continue? (Ye/Ne");
+//        confirm = sc.next().equalsIgnoreCase("y");
+//    }while(confirm);
 
-//        Convert given number grades into letter grades.
-//
-//        Prompt the user for a numerical grade from 0 to 100.
-//        Display the corresponding letter grade.
-//        Prompt the user to continue.
-//        Assume that the user will enter valid integers for the grades.
-//        The application should only continue if the user agrees to.
-//        Grade Ranges:
-//
-//        A : 100 - 88
-//        B : 87 - 80
-//        C : 79 - 67
-//        D : 66 - 60
-//        F : 59 - 0
-//        Bonus
-//
-//        Edit your grade ranges to include pluses and minuses (ex: 99-100 = A+).
+    boolean confirm;
 
+    do {
+        System.out.println("Enter a numerical grade: ");
 
+        int grade = sc.nextInt();
 
+        if (grade < 60) {
 
+            System.out.println("F");
+        } else if (grade < 67){
+
+            System.out.println("D");
+
+        } else if (grade < 80){
+
+            System.out.println("C");
+        } else if (grade < 88){
+
+            System.out.println("B");
+        } else {
+            System.out.println("A");
+        }
+
+        System.out.println("Shall we do it again? (Y/N) ");
+
+        confirm = sc.next().equalsIgnoreCase("y");
+
+        } while(confirm);
+
+        sc.close();
     }
 }

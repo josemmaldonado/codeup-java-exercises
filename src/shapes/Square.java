@@ -8,6 +8,7 @@ abstract class Square extends Quadrilateral {
     }
 
     public double setLength() {
+
         return this.length;
     }
 
@@ -20,11 +21,13 @@ abstract class Square extends Quadrilateral {
 
 
     public double getPerimeter() {
-         return (4 * this.length);
+
+        return (4 * this.length);
     }
 
 
     public double getArea() {
+
         return this.width *= this.width;
     }
 
