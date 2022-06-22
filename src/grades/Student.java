@@ -79,34 +79,34 @@ public class Student {
     public static void main(String[] args) {
 
 
-//        Student student1 = new Student("OShea");
-//
-//        student1.addGrade(75);
-//        student1.addGrade(89);
-//        student1.addGrade(63);
-//
-//        Student student2 = new Student("Ye");
-//
-//        student2.addGrade(77);
-//        student2.addGrade(83);
-//        student2.addGrade(95);
-//
-//        Student student3 = new Student("Kweli");
-//
-//        student3.addGrade(91);
-//        student3.addGrade(90);
-//        student3.addGrade(94);
-//
-//        Student student4 = new Student("Dante");
-//
-//        student4.addGrade(78);
-//        student4.addGrade(71);
-//        student4.addGrade(73);
+        Student Oshea = new Student("OShea");
 
-//
-//        System.out.println(student1.studentsName);
-//        System.out.println(student1.studentsGrades);
-//        System.out.println(student1.getGradeAverage());
+        Oshea.addGrade(75);
+        Oshea.addGrade(89);
+        Oshea.addGrade(63);
+
+        Student Ye = new Student("Ye");
+
+        Ye.addGrade(77);
+        Ye.addGrade(83);
+        Ye.addGrade(95);
+
+        Student Kweli = new Student("Kweli");
+
+        Kweli.addGrade(91);
+        Kweli.addGrade(90);
+        Kweli.addGrade(94);
+
+        Student Dante = new Student("Dante");
+
+        Dante.addGrade(78);
+        Dante.addGrade(71);
+        Dante.addGrade(73);
+
+
+        System.out.println(Oshea.studentsName);
+        System.out.println(Oshea.studentsGrades);
+        System.out.println(Oshea.getGradeAverage());
 
 
 

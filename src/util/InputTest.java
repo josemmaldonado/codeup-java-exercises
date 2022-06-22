@@ -6,9 +6,9 @@ public class InputTest {
 
         Input input = new Input();
 //
-//        String userString = input.getString();
-//
-//        System.out.println("userString = "+ userString);
+        String userString = input.getString();
+
+        System.out.println("userString = "+ userString);
 //
 //        System.out.println("Do you like apples?");
 //
@@ -23,7 +23,7 @@ public class InputTest {
 //        input.getInt(1,10);
 
 
-        input.getDouble(1.00 , 10.00);
+//        input.getDouble(1.00 , 10.00);
 
     }
 }

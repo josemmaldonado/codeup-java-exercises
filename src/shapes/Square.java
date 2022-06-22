@@ -11,7 +11,9 @@ abstract class Square extends Quadrilateral {
 
         return this.length;
     }
+public void write(){
 
+}
 
 
     public double setWidth() {

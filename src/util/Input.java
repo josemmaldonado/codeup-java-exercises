@@ -54,13 +54,13 @@ public class Input {
 
             System.out.println("Okay, " + intInput + " is a great choice.");
 
-        } catch (NumberFormatException e) {
+        } catch (NumberFormatException nfe) {
 
-            System.out.println("Uh oh, something went wrong: " + e.getMessage());
+            System.out.println("Uh oh, something went wrong: " + nfe.getMessage());
 
             System.out.println("Here is some more detail:");
 
-            e.printStackTrace();
+            nfe.printStackTrace();
         }
 
         return intInput;
@@ -97,18 +97,20 @@ public class Input {
 
             System.out.println("Okay, " + dubInput + " is a great choice.");
 
-        } catch (NumberFormatException e) {
+        } catch (NumberFormatException nfe) {
 
-            System.out.println("Uh oh, something went wrong: " + e.getMessage());
+            System.out.println("Uh oh, something went wrong: " + nfe.getMessage());
 
             System.out.println("Here is some more detail:");
 
-            e.printStackTrace();
+            nfe.printStackTrace();
         }
 
         return dubInput;
 
     }
+
+
 
 }
 
