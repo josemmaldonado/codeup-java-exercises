@@ -8,7 +8,9 @@ public String name;
  }
 //protected a keyword which means it can  share information between the subclasses.
 protected int age;
+public void write(){
 
+}
 
 
 
